@@ -34,7 +34,6 @@ RUN npm install
 # Create single binary file
 RUN pkg --targets node12-alpine-x64 /usr/src/app/package.json
 
-
 FROM jrottenberg/ffmpeg-7.1-alpine320
 
 # Create user and change workdir

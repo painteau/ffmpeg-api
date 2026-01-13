@@ -34,7 +34,7 @@ RUN npm install
 # Create single binary file
 RUN pkg --targets node12-alpine-x64 /usr/src/app/package.json
 
-FROM jrottenberg/ffmpeg-7.1-alpine320
+FROM jrottenberg/ffmpeg-4.4.1-alpine313
 
 # Create user and change workdir
 RUN adduser --disabled-password --home /home/ffmpgapi ffmpgapi
